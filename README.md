@@ -2,6 +2,4 @@
 
 Integrate a mobile website with animations in CSS
 
-## Subheader
-
 Using git and terminal
