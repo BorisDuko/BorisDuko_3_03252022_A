@@ -4,6 +4,4 @@ Integrate a mobile website with animations in CSS
 
 Using git, ~bash and vscode terminal
 
-## Git branch
-
-1. Open index.html in your browser
+## git branching 49:42 continue
