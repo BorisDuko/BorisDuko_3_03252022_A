@@ -1,6 +1,7 @@
-# Integrate a mobile website with animations in CSS
+# OpenClassRooms Project #3
 
-My repository for OpenClassRooms Project #3
+Integrate a mobile website with animations in CSS
+My repository for
 
 ## Subheader
 
