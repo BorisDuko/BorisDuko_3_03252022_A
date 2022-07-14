@@ -4,4 +4,4 @@ My repository for OpenClassRooms Project #3
 
 ## Subheader
 
-Using git and and terminal
+Using git and terminal
