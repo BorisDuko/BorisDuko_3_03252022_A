@@ -2,4 +2,4 @@
 
 Integrate a mobile website with animations in CSS
 
-Using git and terminal
+Using git, ~bash and vscode terminal
