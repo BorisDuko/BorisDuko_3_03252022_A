@@ -1,2 +1,18 @@
 @import "./resets";
 @import "./variables";
+// temporary for html structure
+.card img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+// test test
+.footer__logo {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 32px;
+}
+
+.footer-img-logo {
+  width: 145px;
+}

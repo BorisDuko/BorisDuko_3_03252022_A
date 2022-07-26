@@ -2,4 +2,21 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.card img {
+  height: 200px;
+  width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.footer__logo {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 32px;
+}
+
+.footer-img-logo {
+  width: 145px;
 }/*# sourceMappingURL=main.css.map */
