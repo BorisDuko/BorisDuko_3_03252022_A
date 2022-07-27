@@ -11,16 +11,30 @@
      object-fit: cover;
 }
 
-.footer__logo {
-  font-weight: 900;
-  font-style: italic;
-  font-size: 32px;
-}
-
 .footer-img-logo {
   width: 145px;
 }
 
 .img-cover img {
   width: 200px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header img {
+  display: block;
+  margin: 32px auto 16px auto;
+  height: 40px;
+}
+
+.location {
+  text-align: center;
+  background-color: #eaeaea;
+  padding: 16px 0;
+  border-top: 2px solid black;
+}
+.location i {
+  padding-right: 10px;
 }/*# sourceMappingURL=main.css.map */
