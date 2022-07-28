@@ -57,10 +57,48 @@ header img {
   background-color: #ff79da;
   border: none;
   color: #fff;
-  padding: 20px 55px;
+  padding: 20px 36px;
   border-radius: 34px;
   font-size: 16px;
   cursor: pointer;
   display: inline-block;
   background: linear-gradient(175deg, #ff79da 0%, #9356dc 107%);
+}
+
+.how__title {
+  margin: 60px 0 40px 16px;
+}
+
+.nav li {
+  list-style: none;
+  background-color: #f6f6f6;
+  padding: 24px 32px;
+  margin: 0 auto 16px auto;
+  width: 80%;
+  border-radius: 24px;
+}
+.nav li i {
+  margin-right: 16px;
+}
+
+.nav .number {
+  background-color: #9356dc;
+  color: #fff;
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  font-size: 9px;
+  border-radius: 18px;
+  margin-left: -39px;
+}
+.nav .number .numbers {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+li:hover {
+  background-color: #f5edff;
+  color: #9356dc;
 }/*# sourceMappingURL=main.css.map */
