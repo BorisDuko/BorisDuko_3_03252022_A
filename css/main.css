@@ -15,10 +15,6 @@
   width: 145px;
 }
 
-.img-cover img {
-  width: 200px;
-}
-
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -47,11 +43,17 @@ header img {
 }
 .header__block h1 {
   padding: 38px 0;
+  padding: 38px 0;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 28px;
 }
 .header__block h4 {
   font-weight: 400;
   color: #696969;
   margin-bottom: 42px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .header__block button {
   background-color: #ff79da;
@@ -74,7 +76,7 @@ header img {
   background-color: #f6f6f6;
   padding: 24px 32px;
   margin: 0 auto 16px auto;
-  width: 80%;
+  width: 88%;
   border-radius: 24px;
 }
 .nav li i {
@@ -100,5 +102,106 @@ header img {
 
 li:hover {
   background-color: #f5edff;
+}
+li:hover .nav__icon {
   color: #9356dc;
+}
+
+.main__section {
+  background-color: #eaeaea;
+  margin-top: 40px;
+}
+.main__section > h2 {
+  padding: 60px 0 24px 16px;
+}
+
+.card {
+  border-radius: 16px;
+  margin: 0 16px 24px 16px;
+  position: relative;
+}
+.card img {
+  border-radius: 16px 16px 0 0;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card .card-description {
+  background-color: #fff;
+  border-radius: 0 0 16px 16px;
+  padding: 12px 0 12px 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.card .card-description h3 {
+  padding-bottom: 4px;
+}
+
+.new__rectangle {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  width: 80px;
+  height: 30px;
+  background-color: #99e2d0;
+}
+.new__rectangle p {
+  font-weight: 400;
+  text-align: center;
+  padding-top: 6px;
+  color: #048969;
+}
+
+.card-section:last-child {
+  padding-bottom: 64px;
+}
+
+.contour-heart {
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.purple-heart {
+  color: #9356dc;
+  visibility: hidden;
+  font-size: 20px;
+  position: relative;
+  right: 24px;
+}
+
+.heart-icon--swap:hover {
+  cursor: pointer;
+}
+.heart-icon--swap:hover .contour-heart {
+  visibility: hidden;
+}
+.heart-icon--swap:hover .purple-heart {
+  visibility: visible;
+}
+
+.footer {
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+}
+.footer h3 {
+  color: #fff;
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+  font-size: 18px;
+  margin: 24px 20px 20px 16px;
+}
+.footer a {
+  text-decoration: none;
+  color: #fff;
+  padding-left: 16px;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+.footer a i {
+  padding-right: 12px;
+}
+
+.footer:last-child {
+  padding-bottom: 24px;
 }/*# sourceMappingURL=main.css.map */
