@@ -161,25 +161,29 @@ li:hover .nav__icon {
 
 .purple-heart {
   display: inline;
+  background: linear-gradient(200deg, #9356dc, #ff79da);
   visibility: hidden;
   font-size: 20px;
   position: relative;
   right: 24px;
 }
 
-.heart-icon--swap {
-  background: linear-gradient(200deg, #9356dc, #ff79da);
+.heart-icon--swap:hover {
   -webkit-background-clip: text;
           background-clip: text;
+  color: transparent;
 }
 
 .heart-icon--swap:hover {
   cursor: pointer;
 }
 .heart-icon--swap:hover .contour-heart {
+  color: transparent;
   visibility: hidden;
 }
 .heart-icon--swap:hover .purple-heart {
+  -webkit-background-clip: text;
+          background-clip: text;
   visibility: visible;
 }
 

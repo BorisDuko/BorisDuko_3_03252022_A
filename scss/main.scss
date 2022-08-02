@@ -181,34 +181,35 @@ li:hover {
   padding-top: 10px;
 }
 .purple-heart {
-  // color: $primary-color;
   display: inline;
-
-  // background: linear-gradient(200deg, #9356dc 0%, #ff79da 100%);
+  background: linear-gradient(200deg, $primary-color, $secondary-color);
   visibility: hidden;
   font-size: 20px;
   position: relative; // to be able to move it
   right: 24px; // width of the heart / compensate swap toggle
-
-  // /////////// TEMP
 }
 
-.heart-icon--swap {
-  background: linear-gradient(200deg, $primary-color, $secondary-color);
-  background-clip: text;
+.heart-icon--swap:hover {
+  background-clip: text; // only to color the icon
+  color: transparent;
+  // -webkit-background-clip: text;
 }
 
 .heart-icon--swap:hover {
   cursor: pointer;
   & .contour-heart {
+    color: transparent;
+
     visibility: hidden;
   }
 
   & .purple-heart {
+    background-clip: text;
     visibility: visible;
   }
 }
 
+// ---------- Footer ----------
 .footer {
   background-color: #353535;
   display: flex;
