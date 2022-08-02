@@ -56,6 +56,13 @@ header img {
     margin-bottom: 42px;
     margin-left: 20px;
     margin-right: 20px;
+    // // fit words like on mockup
+    // width: 280px;
+    // word-wrap: break-word;
+
+    // &:nth-child(3) {
+    //   margin-top: -35px;
+    // }
   }
 
   & button {
@@ -82,9 +89,10 @@ header img {
   list-style: none;
   background-color: #f6f6f6;
   padding: 24px 32px;
-  margin: 0 auto 16px auto;
+  margin: 0 auto 22px auto;
   width: 88%;
   border-radius: 24px;
+  box-shadow: 0px 0px 9px 2px rgb(191 191 191 / 35%); // light shadow
 
   & i {
     margin-right: 16px; // more space between icon & text
@@ -105,7 +113,7 @@ header img {
   & .numbers {
     // centering icon inside div
     position: absolute;
-    top: 50%; // adjust to the size of icon +5%
+    top: 50%; // adjust to the size of icon
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -135,6 +143,8 @@ li:hover {
   border-radius: 16px;
   margin: 0 16px 24px 16px; // card edges spacing
   position: relative;
+  // light shadow on the bottom
+  box-shadow: 0px 5px 9px 2px rgb(191 191 191 / 35%);
 
   & img {
     border-radius: 16px 16px 0 0;

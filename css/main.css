@@ -73,9 +73,10 @@ header img {
   list-style: none;
   background-color: #f6f6f6;
   padding: 24px 32px;
-  margin: 0 auto 16px auto;
+  margin: 0 auto 22px auto;
   width: 88%;
   border-radius: 24px;
+  box-shadow: 0px 0px 9px 2px rgba(191, 191, 191, 0.35);
 }
 .nav li i {
   margin-right: 16px;
@@ -117,6 +118,7 @@ li:hover .nav__icon {
   border-radius: 16px;
   margin: 0 16px 24px 16px;
   position: relative;
+  box-shadow: 0px 5px 9px 2px rgba(191, 191, 191, 0.35);
 }
 .card img {
   border-radius: 16px 16px 0 0;
