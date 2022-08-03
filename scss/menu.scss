@@ -3,13 +3,94 @@
 
 // temporary for html structure
 
-.img-cover img {
-  display: block;
-  margin: 32px auto 16px auto;
-  height: 40px;
+// -------------------------------------------------------------
+
+// logo & home-arrow div
+.return-btn-logo {
+  position: relative;
 }
 
-// -------------------------------------------------------------
+.fa-arrow-left {
+  position: absolute; // remove from flow
+  font-size: 24px;
+  top: 4.5px;
+  left: 12px;
+}
+
+.ohmyfood__menu--logo {
+  display: block; // to auto center
+  margin: 32px auto 16px auto;
+  height: 32px;
+}
+
+// ---------- Main section ----------
+
+main {
+  background-color: #f6f6f6;
+}
+
+// ----- Title & cover img -----
+
+.img-cover img {
+  width: 100%;
+  object-fit: cover; // if height changes - picture doesn't crumble
+  // height: 200px;  // to adjust
+}
+
+.menu-title {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f6f6f6;
+  border-radius: 25px 25px 0 0;
+  position: relative;
+  margin-top: -25px;
+  margin-bottom: 32px;
+
+  & h1 {
+    font-family: "Shrikhand", cursive;
+    font-weight: map-get($font-weights, "regular");
+    padding: 28px 0 0 16px;
+  }
+
+  & i {
+    font-size: 24px;
+    padding: 28px 24px 0 0;
+  }
+}
+
+// ----- Menu -----
+
+.menu {
+  margin: 0 16px; // global for the whole menu section
+
+  & h2 {
+    font-weight: map-get($font-weights, "regular");
+    color: #696969;
+    margin-bottom: 5px;
+  }
+
+  & hr {
+    width: 55px;
+    border: 2px solid $tertiary-color;
+    margin-bottom: 20px;
+  }
+}
+
+// ----- Menu-card -----
+
+.menu-card {
+}
+
+.menu-card__item {
+  background-color: #fff;
+  border-radius: 25px;
+  box-shadow: 0px 0px 9px 2px rgb(191 191 191 / 35%);
+  margin-bottom: 16px;
+
+  & .fa-circle-check {
+    // visibility: hidden;
+  }
+}
 
 // ---------- Footer ----------
 .footer {

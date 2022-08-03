@@ -3,3 +3,16 @@
   margin: 0;
   padding: 0;
 }
+
+// @import "./variables";
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+// to remove browser styling for <a>
+a {
+  text-decoration: none;
+  color: #000;
+  // color: $text-color;
+}

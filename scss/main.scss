@@ -22,7 +22,7 @@
 header img {
   display: block;
   margin: 32px auto 16px auto;
-  height: 40px;
+  height: 32px;
 }
 
 .header__location {
@@ -138,12 +138,6 @@ li:hover {
   }
 }
 
-// to remove browser styling for <a>
-section a {
-  text-decoration: none;
-  color: #000;
-}
-
 .card {
   border-radius: 16px;
   margin: 0 16px 24px 16px; // card edges spacing
@@ -238,7 +232,6 @@ section a {
   }
 
   & a {
-    text-decoration: none;
     color: #fff;
     padding-left: 16px;
     margin-bottom: 5px;
