@@ -5,12 +5,38 @@
 }
 
 body {
-  background-color: #9356dc;
+  font-family: "Roboto", sans-serif;
 }
 
-img {
-  height: 200px;
-  width: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
+.img-cover img {
+  display: block;
+  margin: 32px auto 16px auto;
+  height: 40px;
+}
+
+.footer {
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+}
+.footer h3 {
+  color: #fff;
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+  font-size: 18px;
+  margin: 24px 20px 12px 0;
+}
+.footer a {
+  text-decoration: none;
+  color: #fff;
+  padding-left: 16px;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+.footer a i {
+  padding-right: 12px;
+}
+
+.footer:last-child {
+  padding-bottom: 24px;
 }/*# sourceMappingURL=menu.css.map */

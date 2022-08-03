@@ -1,10 +1,12 @@
 @import "./resets";
 @import "./variables";
 
-@mixin hearts {
-  font-size: 20px;
-}
 // temporary for html structure
+
+@mixin hearts {
+  font-size: 20px; // temp
+}
+
 .card img {
   height: 200px;
   width: 200px;
@@ -16,9 +18,6 @@
 }
 
 // -------------------------------------------------------------
-body {
-  font-family: "Roboto", sans-serif;
-}
 
 header img {
   display: block;
@@ -139,6 +138,12 @@ li:hover {
   }
 }
 
+// to remove browser styling for <a>
+section a {
+  text-decoration: none;
+  color: #000;
+}
+
 .card {
   border-radius: 16px;
   margin: 0 16px 24px 16px; // card edges spacing
@@ -201,15 +206,14 @@ li:hover {
 
 .heart-icon--swap:hover {
   background-clip: text; // only to color the icon
-  color: transparent;
+  color: transparent; // doesn't work without 'transparent'
   // -webkit-background-clip: text;
 }
 
 .heart-icon--swap:hover {
   cursor: pointer;
-  & .contour-heart {
-    color: transparent;
 
+  & .contour-heart {
     visibility: hidden;
   }
 
@@ -230,7 +234,7 @@ li:hover {
     font-family: "Shrikhand", cursive;
     font-weight: map-get($font-weights, "regular");
     font-size: 18px;
-    margin: 24px 20px 20px 16px;
+    margin: 24px 20px 12px 0;
   }
 
   & a {

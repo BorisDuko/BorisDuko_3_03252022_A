@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 .card img {
   height: 200px;
   width: 200px;
@@ -13,10 +17,6 @@
 
 .footer-img-logo {
   width: 145px;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
 }
 
 header img {
@@ -114,6 +114,11 @@ li:hover .nav__icon {
   padding: 60px 0 24px 16px;
 }
 
+section a {
+  text-decoration: none;
+  color: #000;
+}
+
 .card {
   border-radius: 16px;
   margin: 0 16px 24px 16px;
@@ -180,7 +185,6 @@ li:hover .nav__icon {
   cursor: pointer;
 }
 .heart-icon--swap:hover .contour-heart {
-  color: transparent;
   visibility: hidden;
 }
 .heart-icon--swap:hover .purple-heart {
@@ -199,7 +203,7 @@ li:hover .nav__icon {
   font-family: "Shrikhand", cursive;
   font-weight: 400;
   font-size: 18px;
-  margin: 24px 20px 20px 16px;
+  margin: 24px 20px 12px 0;
 }
 .footer a {
   text-decoration: none;

@@ -1,12 +1,43 @@
 @import "./resets";
 @import "./variables";
 
-body {
-  background-color: $primary-color;
+// temporary for html structure
+
+.img-cover img {
+  display: block;
+  margin: 32px auto 16px auto;
+  height: 40px;
 }
 
-img {
-  height: 200px;
-  width: 200px;
-  object-fit: cover;
+// -------------------------------------------------------------
+
+// ---------- Footer ----------
+.footer {
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+
+  & h3 {
+    color: #fff;
+    font-family: "Shrikhand", cursive;
+    font-weight: map-get($font-weights, "regular");
+    font-size: 18px;
+    margin: 24px 20px 12px 0;
+  }
+
+  & a {
+    text-decoration: none;
+    color: #fff;
+    padding-left: 16px;
+    margin-bottom: 5px;
+    font-size: 15px;
+
+    & i {
+      padding-right: 12px;
+    }
+  }
+}
+
+.footer:last-child {
+  padding-bottom: 24px;
 }
