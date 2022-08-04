@@ -72,6 +72,7 @@ main {
   & hr {
     width: 55px;
     border: 2px solid $tertiary-color;
+    background-color: $tertiary-color;
     margin-bottom: 20px;
   }
 }
@@ -82,14 +83,80 @@ main {
 }
 
 .menu-card__item {
+  position: relative;
   background-color: #fff;
-  border-radius: 25px;
+  border-radius: 18px;
   box-shadow: 0px 0px 9px 2px rgb(191 191 191 / 35%);
   margin-bottom: 16px;
+
+  & h3 {
+    padding: 8px 1px 3px 12px;
+  }
+
+  & p {
+    padding: 8px 1px 8px 12px;
+  }
+
+  & .price {
+    position: absolute;
+    font-weight: map-get($font-weights, "medium");
+    right: 85px;
+    bottom: 12px;
+  }
 
   & .fa-circle-check {
     // visibility: hidden;
   }
+}
+
+.checkbox {
+  // green sliding box
+  // visibility: hidden;
+  // green sliding box
+  position: absolute;
+  right: 0; // temp
+  bottom: 0; // to stay on top of parent div
+  background-color: $tertiary-color;
+  height: 69px;
+  width: 62px;
+  border-radius: 0 18px 18px 0;
+
+  & .circle--white {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #fff;
+    // centering icon inside div
+    position: absolute;
+    top: 50%; // adjust to the size of icon
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  & i {
+    color: $tertiary-color;
+    font-size: 14px;
+    // centering icon inside div
+    position: absolute;
+    top: 50%; // adjust to the size of icon
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+// Order Button
+
+.order-btn {
+  border: none;
+  color: #fff;
+  padding: 20px 75px;
+  border-radius: 34px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: 50px auto 65px auto;
+
+  background: linear-gradient(175deg, $secondary-color 0%, $primary-color 107%);
 }
 
 // ---------- Footer ----------
