@@ -83,29 +83,53 @@ main {
 }
 
 .menu-card__item {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+
   background-color: #fff;
   border-radius: 18px;
   box-shadow: 0px 0px 9px 2px rgb(191 191 191 / 35%);
   margin-bottom: 16px;
 
+  //  ------- animation -------
+  &:hover {
+    .checkbox {
+      width: 62px;
+    }
+    .circle--white {
+      transform: translate(-50%, -50%) scale(1);
+    }
+    .fa-check {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+  }
+  // -------------------------------
   & h3 {
     padding: 8px 1px 3px 12px;
   }
 
   & p {
     padding: 8px 1px 8px 12px;
+    // text ellipsis 3 lines necessary
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &:hover {
+      white-space: normal;
+      overflow: visible;
+    }
   }
+}
+
+.menu-card__price-checkbox {
+  display: flex;
 
   & .price {
-    position: absolute;
     font-weight: map-get($font-weights, "medium");
-    right: 85px;
-    bottom: 8px;
-  }
-
-  & .fa-circle-check {
-    // visibility: hidden;
+    align-self: flex-end;
+    margin-bottom: 8px;
+    margin-right: 24px;
   }
 }
 
@@ -113,13 +137,15 @@ main {
   // green sliding box
   // visibility: hidden;
   // green sliding box
-  position: absolute;
-  right: 0; // temp
-  bottom: 0; // to stay on top of parent div
-  background-color: $tertiary-color;
-  height: 69px;
-  width: 62px;
+  position: relative;
   border-radius: 0 18px 18px 0;
+  background-color: $tertiary-color;
+
+  // animation
+  // start with width 0px
+  width: 0;
+  transform-origin: right;
+  transition: all 750ms ease;
 
   & .circle--white {
     width: 20px;
@@ -130,7 +156,11 @@ main {
     position: absolute;
     top: 50%; // adjust to the size of icon
     left: 50%;
-    transform: translate(-50%, -50%);
+
+    // animation
+
+    transform: translate(-10%, -50%) scale(0); // scale 2nd !
+    transition: all 750ms ease;
   }
 
   & i {
@@ -140,14 +170,11 @@ main {
     position: absolute;
     top: 50%; // adjust to the size of icon
     left: 50%;
-    transform: translate(-50%, -50%);
+
+    // animation
+    transform: translate(-50%, -50%) rotate(360deg);
+    transition: transform 750ms;
   }
-}
-
-// tall checkbox
-
-.checkbox--tall {
-  height: 92px; // to compensate two lines menu description
 }
 
 // Order Button

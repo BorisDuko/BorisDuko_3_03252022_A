@@ -3,20 +3,6 @@
 
 // temporary for html structure
 
-@mixin hearts {
-  font-size: 20px; // temp
-}
-
-.card img {
-  height: 200px;
-  width: 200px;
-  object-fit: cover;
-}
-
-.footer-img-logo {
-  width: 145px;
-}
-
 // -------------------------------------------------------------
 
 header img {
@@ -170,6 +156,11 @@ li:hover {
     & h3 {
       padding-bottom: 4px;
     }
+  }
+
+  // removes gap between img and text
+  & a {
+    background-color: #fff; // added anchor gap - this removes it
   }
 }
 
