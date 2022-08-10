@@ -103,7 +103,9 @@ main {
       transform: translate(-50%, -50%) rotate(0deg);
     }
   }
-  // -------------------------------
+}
+// -------------------------------
+.menu-card__description {
   & h3 {
     padding: 8px 1px 3px 12px;
   }
@@ -111,11 +113,12 @@ main {
   & p {
     padding: 8px 1px 8px 12px;
     // text ellipsis 3 lines necessary
+    // #TODO desnt work
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-
-    &:hover {
+    // #TODO desnt work
+    &:active {
       white-space: normal;
       overflow: visible;
     }
@@ -158,7 +161,6 @@ main {
     left: 50%;
 
     // animation
-
     transform: translate(-10%, -50%) scale(0); // scale 2nd !
     transition: all 750ms ease;
   }

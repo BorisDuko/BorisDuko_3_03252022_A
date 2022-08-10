@@ -91,16 +91,17 @@ main {
 .menu-card__item:hover .fa-check {
   transform: translate(-50%, -50%) rotate(0deg);
 }
-.menu-card__item h3 {
+
+.menu-card__description h3 {
   padding: 8px 1px 3px 12px;
 }
-.menu-card__item p {
+.menu-card__description p {
   padding: 8px 1px 8px 12px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu-card__item p:hover {
+.menu-card__description p:active {
   white-space: normal;
   overflow: visible;
 }
