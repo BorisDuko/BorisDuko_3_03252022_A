@@ -95,6 +95,7 @@ main {
   &:hover {
     .checkbox {
       width: 62px;
+      z-index: 0; // test
     }
     .circle--white {
       transform: translate(-50%, -50%) scale(1);
@@ -138,11 +139,10 @@ main {
 
 .checkbox {
   // green sliding box
-  // visibility: hidden;
-  // green sliding box
   position: relative;
   border-radius: 0 18px 18px 0;
   background-color: $tertiary-color;
+  z-index: -1; // test
 
   // animation
   // start with width 0px
