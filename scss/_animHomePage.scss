@@ -1,0 +1,238 @@
+// home page div wrapper
+.home-page {
+  position: relative;
+  animation: load-opac 2200ms;
+  opacity: 1;
+}
+// home page div: appear with delay
+@keyframes load-opac {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+// variables for individual letters
+$an-time: 170ms;
+$delay: $an-time;
+// loading text div
+.load-text {
+  position: fixed;
+  font-size: 6vw; // text size adjustable
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  animation: text-gone 1850ms forwards;
+
+  // individual letters for loading text
+  &__l {
+    // color: $primary-color;
+    // animation: rain1 2s infinite;
+    color: $primary-color;
+    animation: frog $an-time;
+  }
+  &__o {
+    // color: $secondary-color;
+    // animation: rain2 2s infinite;
+    color: $primary-color;
+    animation: frog $an-time $delay;
+  }
+  &__a {
+    // color: $tertiary-color;
+    // animation: rain3 2s infinite;
+    color: $primary-color;
+    animation: frog $an-time $delay * 2;
+  }
+  &__d {
+    // color: $primary-color;
+    // animation: rain1 2s infinite;
+    color: $primary-color;
+    animation: frog $an-time $delay * 3;
+  }
+  &__i {
+    // color: $secondary-color;
+    // animation: rain2 2s infinite;
+    color: $primary-color;
+    animation: frog $an-time $delay * 4;
+  }
+  &__n {
+    // color: $tertiary-color;
+    // animation: rain3 2s infinite;
+    color: $primary-color;
+    animation: frog $an-time $delay * 5;
+  }
+  &__g {
+    // color: $primary-color;
+    // animation: rain1 2s infinite;
+    color: $primary-color;
+    animation: frog $an-time $delay * 6;
+  }
+  &__d1 {
+    // color: $secondary-color;
+    // animation: rain2 2s infinite;
+    color: $primary-color;
+    animation: frog $an-time $delay * 7;
+  }
+  &__d2 {
+    // color: $tertiary-color;
+    // animation: rain3 2s infinite;
+    color: $primary-color;
+    animation: frog $an-time $delay * 8;
+  }
+  &__d3 {
+    // color: $primary-color;
+    // animation: rain1 2s infinite;
+    color: $primary-color;
+    animation: frog $an-time $delay * 9;
+  }
+}
+// color jump from letter to letter anim
+@keyframes frog {
+  0% {
+    color: $primary-color;
+  }
+  50% {
+    color: $secondary-color;
+  }
+  99% {
+  }
+  100% {
+    color: $tertiary-color;
+  }
+}
+// loading text div remove from page animation
+@keyframes text-gone {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+// spinning circle under loading text
+.spin {
+  border: solid 5px $primary-color;
+  border-bottom-color: $secondary-color;
+  border-top-color: $tertiary-color;
+  border-left-color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 60%;
+  left: 44%;
+  // animation
+  opacity: 0;
+  animation: spinner 1850ms ease-out;
+  animation-play-state: running;
+}
+// spinning circle animation
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(630deg);
+    opacity: 0;
+  }
+}
+
+// letters change color constantly animation
+
+// @keyframes rain1 {
+//   0% {
+//     color: $primary-color;
+//   }
+//   50% {
+//     color: $secondary-color;
+//   }
+//   100% {
+//     color: $tertiary-color;
+//   }
+// }
+// @keyframes rain2 {
+//   0% {
+//     color: $secondary-color;
+//   }
+//   50% {
+//     color: $tertiary-color;
+//   }
+//   100% {
+//     color: $primary-color;
+//   }
+// }
+// @keyframes rain3 {
+//   0% {
+//     color: $tertiary-color;
+//   }
+//   50% {
+//     color: $primary-color;
+//   }
+//   100% {
+//     color: $secondary-color;
+//   }
+// }
+//  ----------------------------------
+
+// font awesome icon to spin (testing)
+
+// .fa-spinner {
+//   font-size: 50px;
+//   position: absolute;
+//   top: 4vh;
+//   left: 43vw;
+
+//   transform: scale(0) translateX(0);
+//   animation: fa-spin 1900ms;
+//   animation-fill-mode: forwards;
+
+//   background: -moz-linear-gradient(
+//     135deg,
+//     #9356dc 0%,
+//     #ff79da 85%,
+//     #99e2d0 100%
+//   );
+//   background: -webkit-linear-gradient(
+//     135deg,
+//     #9356dc 0%,
+//     #ff79da 85%,
+//     #99e2d0 100%
+//   );
+//   background: linear-gradient(135deg, #9356dc 0%, #ff79da 85%, #99e2d0 100%);
+//   -webkit-background-clip: text;
+//   -moz-background-clip: text;
+//   background-clip: text;
+//   -webkit-text-fill-color: transparent;
+// }
+
+// @keyframes fa-spin {
+//   0% {
+//     transform: scale(0.1);
+//   }
+//   1% {
+//     transform: scale(1);
+//   }
+//   99% {
+//     transform: scale(1);
+//   }
+//   100% {
+//     transform: scale(0) translateX(-100%);
+//   }
+// }
