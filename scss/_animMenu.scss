@@ -1,0 +1,83 @@
+// menu item one-by-one
+$anim-dur: 500ms;
+$anim-delay: $anim-dur / 2;
+
+.menu-card__item {
+  animation: stagger $anim-dur $anim-delay ease-out both;
+  //   transform-origin: top;
+
+  @for $i from 1 through 10 {
+    &--#{$i} {
+      animation-delay: $anim-delay * $i;
+    }
+  }
+}
+// comes from the top animation
+@keyframes stagger {
+  0% {
+    transform: translateY(-9999px);
+  }
+  50% {
+    transform: translateY(-50%);
+    opacity: 0; // smooth out transition
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+// menu titles appearance
+
+$title-dur: 250ms;
+$title-delay: 250ms;
+
+.menu__title--1 {
+  opacity: 0;
+  animation: title-appearance 500ms 250ms forwards;
+}
+.menu__title--2 {
+  opacity: 0;
+  animation: title-appearance 500ms 1125ms forwards;
+}
+.menu__title--3 {
+  opacity: 0;
+  animation: title-appearance 500ms 1885ms forwards;
+}
+
+@keyframes title-appearance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// horizontal rule sliding out
+
+.hr {
+  &--1 {
+    animation: hr-slide 1000ms 250ms forwards;
+  }
+  &--2 {
+    animation: hr-slide 1000ms 1125ms forwards;
+  }
+  &--3 {
+    animation: hr-slide 1000ms 1885ms forwards;
+  }
+}
+
+@keyframes hr-slide {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    width: 55px;
+    opacity: 1;
+    // transform-origin: left;
+  }
+}

@@ -26,7 +26,7 @@ $delay: $an-time;
 .load-text {
   position: fixed;
   font-size: 6vw; // text size adjustable
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 1;
@@ -132,8 +132,8 @@ $delay: $an-time;
   width: 50px;
   height: 50px;
   position: fixed;
-  top: 60%;
-  left: 44%;
+  top: 52%;
+  left: 41%;
   // animation
   opacity: 0;
   animation: spinner 1850ms ease-out;

@@ -141,6 +141,8 @@ li:hover {
     border-radius: 16px 16px 0 0;
     width: 100%;
     object-fit: cover;
+    // height for images
+    max-height: 300px; // TODO
   }
 
   & .card-description {
@@ -203,14 +205,17 @@ li:hover {
 
 .heart-icon--swap:hover {
   cursor: pointer;
+  transition: all 1s;
 
   & .contour-heart {
     visibility: hidden;
+    transition: all 1s;
   }
 
   & .purple-heart {
     background-clip: text;
     visibility: visible;
+    transition: all 1s;
   }
 }
 
