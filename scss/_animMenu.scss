@@ -84,23 +84,63 @@ $title-delay: 250ms;
   }
 }
 
-// ------ check box animation sliding out
+// ------ check box animation sliding out -----
 
-@keyframes checkbox-slidingOut {
-  0% {
-    background-color: #fff;
+.checkbox {
+  // animation
+  // start with width 0px
+  width: 0;
+  transform-origin: right;
+  // transition: all 750ms ease;
+  // test
+  // animation: check-width 750ms ease;
+
+  // test
+
+  & .circle--white {
+    // animation
+    transform: translate(-10%, -50%) scale(0); // scale 2nd !
+    transition: all 750ms ease;
   }
-  20% {
-    background-color: #fff;
-  }
-  21% {
-    background-color: $tertiary-color;
-  }
-  100% {
-    background-color: $tertiary-color;
+
+  & i {
+    // animation
+    transform: translate(-50%, -50%) rotate(360deg);
+    transition: transform 750ms;
   }
 }
 
-.checkbox {
-  animation: checkbox-slidingOut 1ms forwards;
+.menu-card__item {
+  &:hover {
+    .checkbox {
+      // width: 62px;
+      //test
+      animation: check-width 750ms ease forwards;
+      // test
+    }
+    .circle--white {
+      transform: translate(-50%, -50%) scale(1);
+    }
+    .fa-check {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+  }
+}
+
+@keyframes check-width {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  15% {
+    opacity: 0;
+  }
+  16% {
+    opacity: 1;
+  }
+
+  100% {
+    width: 69px;
+    opacity: 1;
+  }
 }
