@@ -159,6 +159,39 @@ a {
     opacity: 1;
   }
 }
+@-webkit-keyframes checkbox-slidingOut {
+  0% {
+    background-color: #fff;
+  }
+  20% {
+    background-color: #fff;
+  }
+  21% {
+    background-color: #99e2d0;
+  }
+  100% {
+    background-color: #99e2d0;
+  }
+}
+@keyframes checkbox-slidingOut {
+  0% {
+    background-color: #fff;
+  }
+  20% {
+    background-color: #fff;
+  }
+  21% {
+    background-color: #99e2d0;
+  }
+  100% {
+    background-color: #99e2d0;
+  }
+}
+.checkbox {
+  -webkit-animation: checkbox-slidingOut 1ms forwards;
+          animation: checkbox-slidingOut 1ms forwards;
+}
+
 .return-btn-logo {
   position: relative;
 }
@@ -232,7 +265,6 @@ main {
 }
 .menu-card__item:hover .checkbox {
   width: 62px;
-  z-index: 0;
 }
 .menu-card__item:hover .circle--white {
   transform: translate(-50%, -50%) scale(1);
@@ -241,6 +273,9 @@ main {
   transform: translate(-50%, -50%) rotate(0deg);
 }
 
+.menu-card__description {
+  min-width: 50vw;
+}
 .menu-card__description h3 {
   padding: 8px 1px 3px 12px;
 }
@@ -269,7 +304,6 @@ main {
   position: relative;
   border-radius: 0 18px 18px 0;
   background-color: #99e2d0;
-  z-index: -1;
   width: 0;
   transform-origin: right;
   transition: all 750ms ease;

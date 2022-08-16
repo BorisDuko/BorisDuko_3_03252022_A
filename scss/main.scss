@@ -205,17 +205,14 @@ li:hover {
 
 .heart-icon--swap:hover {
   cursor: pointer;
-  transition: all 1s;
 
   & .contour-heart {
     visibility: hidden;
-    transition: all 1s;
   }
 
   & .purple-heart {
     background-clip: text;
     visibility: visible;
-    transition: all 1s;
   }
 }
 

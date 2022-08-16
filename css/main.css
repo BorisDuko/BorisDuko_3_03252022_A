@@ -370,17 +370,14 @@ li:hover .nav__icon {
 
 .heart-icon--swap:hover {
   cursor: pointer;
-  transition: all 1s;
 }
 .heart-icon--swap:hover .contour-heart {
   visibility: hidden;
-  transition: all 1s;
 }
 .heart-icon--swap:hover .purple-heart {
   -webkit-background-clip: text;
           background-clip: text;
   visibility: visible;
-  transition: all 1s;
 }
 
 .footer {

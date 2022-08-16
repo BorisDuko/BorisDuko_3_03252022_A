@@ -98,7 +98,7 @@ main {
   &:hover {
     .checkbox {
       width: 62px;
-      z-index: 0; // test
+      // z-index: 0; // test
     }
     .circle--white {
       transform: translate(-50%, -50%) scale(1);
@@ -110,6 +110,8 @@ main {
 }
 // -------------------------------
 .menu-card__description {
+  min-width: 50vw; // needs a width property for ellipses to work properly
+
   & h3 {
     padding: 8px 1px 3px 12px;
   }
@@ -117,11 +119,12 @@ main {
   & p {
     padding: 8px 1px 8px 12px;
     // text ellipsis 3 lines necessary
-    // #TODO desnt work
+    // need a width property...
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    // #TODO desnt work
+
+    // to be able to see rest of the text
     &:active {
       white-space: normal;
       overflow: visible;
@@ -140,12 +143,12 @@ main {
   }
 }
 
+// green sliding box
 .checkbox {
-  // green sliding box
   position: relative;
   border-radius: 0 18px 18px 0;
   background-color: $tertiary-color;
-  z-index: -1; // test
+  // z-index: -1; // test
 
   // animation
   // start with width 0px
