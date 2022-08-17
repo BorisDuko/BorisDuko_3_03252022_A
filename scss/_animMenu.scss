@@ -88,14 +88,7 @@ $title-delay: 250ms;
 
 .checkbox {
   // animation
-  // start with width 0px
-  width: 0;
-  transform-origin: right;
-  // transition: all 750ms ease;
-  // test
-  // animation: check-width 750ms ease;
-
-  // test
+  // animation: check-out 750ms ease;
 
   & .circle--white {
     // animation
@@ -110,13 +103,11 @@ $title-delay: 250ms;
   }
 }
 
+// checkbox animation on hover
 .menu-card__item {
   &:hover {
     .checkbox {
-      // width: 62px;
-      //test
-      animation: check-width 750ms ease forwards;
-      // test
+      animation: check-in 750ms ease forwards;
     }
     .circle--white {
       transform: translate(-50%, -50%) scale(1);
@@ -126,8 +117,16 @@ $title-delay: 250ms;
     }
   }
 }
+// tried hover:not
+.menu-card__item {
+  &:not(:hover) {
+    .checkbox {
+      animation: check-out 750ms ease;
+    }
+  }
+}
 
-@keyframes check-width {
+@keyframes check-in {
   0% {
     width: 0;
     opacity: 0;
@@ -138,9 +137,25 @@ $title-delay: 250ms;
   16% {
     opacity: 1;
   }
-
   100% {
     width: 69px;
     opacity: 1;
+  }
+}
+
+@keyframes check-out {
+  from {
+    width: 69px;
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  86% {
+    opacity: 0;
+  }
+  to {
+    width: 0;
+    opacity: 0;
   }
 }

@@ -144,6 +144,7 @@ main {
     position: absolute;
     top: 50%; // adjust to the size of icon
     left: 50%;
+    // transform: translate moved to animMenu
   }
 
   & i {
@@ -153,6 +154,7 @@ main {
     position: absolute;
     top: 50%; // adjust to the size of icon
     left: 50%;
+    // transform: translate moved to animMenu
   }
 }
 

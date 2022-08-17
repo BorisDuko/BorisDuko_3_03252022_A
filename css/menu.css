@@ -159,10 +159,6 @@ a {
     opacity: 1;
   }
 }
-.checkbox {
-  width: 0;
-  transform-origin: right;
-}
 .checkbox .circle--white {
   transform: translate(-10%, -50%) scale(0);
   transition: all 750ms ease;
@@ -173,8 +169,8 @@ a {
 }
 
 .menu-card__item:hover .checkbox {
-  -webkit-animation: check-width 750ms ease forwards;
-          animation: check-width 750ms ease forwards;
+  -webkit-animation: check-in 750ms ease forwards;
+          animation: check-in 750ms ease forwards;
 }
 .menu-card__item:hover .circle--white {
   transform: translate(-50%, -50%) scale(1);
@@ -183,7 +179,12 @@ a {
   transform: translate(-50%, -50%) rotate(0deg);
 }
 
-@-webkit-keyframes check-width {
+.menu-card__item:not(:hover) .checkbox {
+  -webkit-animation: check-out 750ms ease;
+          animation: check-out 750ms ease;
+}
+
+@-webkit-keyframes check-in {
   0% {
     width: 0;
     opacity: 0;
@@ -200,7 +201,7 @@ a {
   }
 }
 
-@keyframes check-width {
+@keyframes check-in {
   0% {
     width: 0;
     opacity: 0;
@@ -214,6 +215,38 @@ a {
   100% {
     width: 69px;
     opacity: 1;
+  }
+}
+@-webkit-keyframes check-out {
+  from {
+    width: 69px;
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  86% {
+    opacity: 0;
+  }
+  to {
+    width: 0;
+    opacity: 0;
+  }
+}
+@keyframes check-out {
+  from {
+    width: 69px;
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  86% {
+    opacity: 0;
+  }
+  to {
+    width: 0;
+    opacity: 0;
   }
 }
 .return-btn-logo {
