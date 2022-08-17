@@ -1,0 +1,66 @@
+@import "./resets";
+@import "./variables";
+@import "./animMenu";
+@import "./animHomePage";
+
+@media screen and (min-width: 1024px) {
+  .spin {
+    top: 55%;
+    left: 45%;
+  }
+
+  .how__title {
+    text-align: center;
+    margin-top: 45px;
+    font-size: 2vw;
+  }
+
+  .nav {
+    & ul {
+      display: flex;
+      justify-content: space-around;
+
+      & li {
+        max-width: 300px;
+      }
+    }
+  }
+
+  .main__section > h2 {
+    text-align: center;
+    font-size: 3.5vw;
+    padding-top: 30px;
+  }
+
+  .card-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .card {
+    width: 46vw;
+
+    & img {
+      height: 45vh;
+    }
+  }
+
+  .footer {
+    & h3 {
+      text-align: center;
+      font-size: 28px;
+      margin-top: 28px;
+      margin-bottom: 26px;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+
+    & a {
+      font-size: 18px;
+    }
+  }
+}

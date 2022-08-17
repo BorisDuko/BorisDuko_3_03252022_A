@@ -392,6 +392,10 @@ li:hover .nav__icon {
   font-size: 18px;
   margin: 24px 20px 12px 0;
 }
+.footer__info {
+  display: flex;
+  flex-direction: column;
+}
 .footer a {
   color: #fff;
   padding-left: 16px;

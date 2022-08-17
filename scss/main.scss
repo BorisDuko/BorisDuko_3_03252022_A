@@ -230,6 +230,11 @@ li:hover {
     margin: 24px 20px 12px 0;
   }
 
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
   & a {
     color: #fff;
     padding-left: 16px;
@@ -240,6 +245,9 @@ li:hover {
       padding-right: 12px;
     }
   }
+}
+
+.footer__info {
 }
 
 .footer:last-child {
