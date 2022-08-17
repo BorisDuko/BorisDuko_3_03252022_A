@@ -159,6 +159,10 @@ a {
     opacity: 1;
   }
 }
+.checkbox {
+  -webkit-animation: check-out 750ms ease;
+          animation: check-out 750ms ease;
+}
 .checkbox .circle--white {
   transform: translate(-10%, -50%) scale(0);
   transition: all 750ms ease;
@@ -177,11 +181,6 @@ a {
 }
 .menu-card__item:hover .fa-check {
   transform: translate(-50%, -50%) rotate(0deg);
-}
-
-.menu-card__item:not(:hover) .checkbox {
-  -webkit-animation: check-out 750ms ease;
-          animation: check-out 750ms ease;
 }
 
 @-webkit-keyframes check-in {

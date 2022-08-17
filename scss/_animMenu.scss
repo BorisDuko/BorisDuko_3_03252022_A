@@ -6,7 +6,6 @@ $anim-delay: $anim-dur / 2;
 
 .menu-card__item {
   animation: stagger $anim-dur $anim-delay ease-out both;
-  //   transform-origin: top;
 
   @for $i from 1 through 10 {
     &--#{$i} {
@@ -28,22 +27,21 @@ $anim-delay: $anim-dur / 2;
   }
 }
 
-// menu titles appearance
+// ----- menu titles appearance -----
 
-$title-dur: 250ms;
-$title-delay: 250ms;
+$title-dur: 500ms;
 
 .menu__title--1 {
   opacity: 0;
-  animation: title-appearance 500ms 250ms forwards;
+  animation: title-appearance $title-dur 250ms forwards;
 }
 .menu__title--2 {
   opacity: 0;
-  animation: title-appearance 500ms 1125ms forwards;
+  animation: title-appearance $title-dur 1125ms forwards;
 }
 .menu__title--3 {
   opacity: 0;
-  animation: title-appearance 500ms 1885ms forwards;
+  animation: title-appearance $title-dur 1885ms forwards;
 }
 
 @keyframes title-appearance {
@@ -55,7 +53,7 @@ $title-delay: 250ms;
   }
 }
 
-// horizontal rule sliding out
+// ----- horizontal rule sliding out -----
 
 .hr {
   &--1 {
@@ -80,7 +78,6 @@ $title-delay: 250ms;
   100% {
     width: 55px;
     opacity: 1;
-    // transform-origin: left;
   }
 }
 
@@ -88,7 +85,7 @@ $title-delay: 250ms;
 
 .checkbox {
   // animation
-  // animation: check-out 750ms ease;
+  animation: check-out 750ms ease;
 
   & .circle--white {
     // animation
@@ -118,14 +115,15 @@ $title-delay: 250ms;
   }
 }
 // tried hover:not
-.menu-card__item {
-  &:not(:hover) {
-    .checkbox {
-      animation: check-out 750ms ease;
-    }
-  }
-}
+// .menu-card__item {
+//   &:not(:hover) {
+//     .checkbox {
+//       animation: check-out 750ms ease;
+//     }
+//   }
+// }
 
+// check-in working
 @keyframes check-in {
   0% {
     width: 0;
@@ -142,7 +140,8 @@ $title-delay: 250ms;
     opacity: 1;
   }
 }
-
+// but check-out does not
+// opacity is ignored
 @keyframes check-out {
   from {
     width: 69px;
