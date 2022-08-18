@@ -96,10 +96,22 @@ a {
           animation: title-appearance 500ms 1125ms forwards;
 }
 
+.menu__title--2-4 {
+  opacity: 0;
+  -webkit-animation: title-appearance 500ms 1395ms forwards;
+          animation: title-appearance 500ms 1395ms forwards;
+}
+
 .menu__title--3 {
   opacity: 0;
   -webkit-animation: title-appearance 500ms 1885ms forwards;
           animation: title-appearance 500ms 1885ms forwards;
+}
+
+.menu__title--3-4 {
+  opacity: 0;
+  -webkit-animation: title-appearance 500ms 2085ms forwards;
+          animation: title-appearance 500ms 2085ms forwards;
 }
 
 @-webkit-keyframes title-appearance {
@@ -127,9 +139,17 @@ a {
   -webkit-animation: hr-slide 1000ms 1125ms forwards;
           animation: hr-slide 1000ms 1125ms forwards;
 }
+.hr--2-4 {
+  -webkit-animation: hr-slide 1000ms 1385ms forwards;
+          animation: hr-slide 1000ms 1385ms forwards;
+}
 .hr--3 {
   -webkit-animation: hr-slide 1000ms 1885ms forwards;
           animation: hr-slide 1000ms 1885ms forwards;
+}
+.hr--3-4 {
+  -webkit-animation: hr-slide 1000ms 2060ms forwards;
+          animation: hr-slide 1000ms 2060ms forwards;
 }
 
 @-webkit-keyframes hr-slide {
@@ -456,7 +476,7 @@ a {
   }
   .main__section > h2 {
     text-align: center;
-    font-size: 3.5vw;
+    font-size: 2.8vw;
     padding-top: 30px;
   }
   .card-section {
@@ -483,5 +503,9 @@ a {
   }
   .footer a {
     font-size: 18px;
+  }
+  .img-cover img {
+    max-height: 500px;
+    height: 450px;
   }
 }/*# sourceMappingURL=media.css.map */

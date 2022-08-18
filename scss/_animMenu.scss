@@ -39,9 +39,17 @@ $title-dur: 500ms;
   opacity: 0;
   animation: title-appearance $title-dur 1125ms forwards;
 }
+.menu__title--2-4 {
+  opacity: 0;
+  animation: title-appearance $title-dur 1395ms forwards;
+}
 .menu__title--3 {
   opacity: 0;
   animation: title-appearance $title-dur 1885ms forwards;
+}
+.menu__title--3-4 {
+  opacity: 0;
+  animation: title-appearance $title-dur 2085ms forwards;
 }
 
 @keyframes title-appearance {
@@ -62,8 +70,14 @@ $title-dur: 500ms;
   &--2 {
     animation: hr-slide 1000ms 1125ms forwards;
   }
+  &--2-4 {
+    animation: hr-slide 1000ms 1385ms forwards;
+  }
   &--3 {
     animation: hr-slide 1000ms 1885ms forwards;
+  }
+  &--3-4 {
+    animation: hr-slide 1000ms 2060ms forwards;
   }
 }
 
