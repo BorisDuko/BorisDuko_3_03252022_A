@@ -35,7 +35,7 @@ main {
 .img-cover img {
   width: 100%;
   object-fit: cover; // if height changes - picture doesn't crumble
-  max-height: 200px; // TODO
+  height: 220px; // TODO
 }
 
 .menu-title {

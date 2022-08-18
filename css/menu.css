@@ -293,7 +293,7 @@ main {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  max-height: 200px;
+  height: 220px;
 }
 
 .menu-title {

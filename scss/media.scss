@@ -3,7 +3,7 @@
 @import "./animMenu";
 @import "./animHomePage";
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   // main page
   .spin {
     top: 55%;
@@ -18,11 +18,8 @@
 
   .nav {
     & ul {
-      display: flex;
-      justify-content: space-around;
-
       & li {
-        max-width: 300px;
+        max-width: 625px;
       }
     }
   }
@@ -39,10 +36,10 @@
     justify-content: space-evenly;
   }
   .card {
-    width: 46vw;
+    width: 45vw;
 
     & img {
-      height: 45vh;
+      height: 30vh;
     }
   }
 
@@ -69,5 +66,38 @@
   .img-cover img {
     max-height: 500px;
     height: 450px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  // main page
+  .nav {
+    & ul {
+      display: flex;
+      justify-content: space-around;
+
+      & li {
+        max-width: 300px;
+      }
+    }
+  }
+
+  .card {
+    width: 46vw;
+
+    & img {
+      height: 45vh;
+    }
+  }
+
+  // menu pages
+
+  .menu-title h1,
+  .menu-title i,
+  .menu h2,
+  .menu hr,
+  .menu-card {
+    margin-left: 15%;
+    margin-right: 15%;
   }
 }

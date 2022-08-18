@@ -457,7 +457,7 @@ a {
     opacity: 0;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .spin {
     top: 55%;
     left: 45%;
@@ -467,12 +467,8 @@ a {
     margin-top: 45px;
     font-size: 2vw;
   }
-  .nav ul {
-    display: flex;
-    justify-content: space-around;
-  }
   .nav ul li {
-    max-width: 300px;
+    max-width: 625px;
   }
   .main__section > h2 {
     text-align: center;
@@ -485,10 +481,10 @@ a {
     justify-content: space-evenly;
   }
   .card {
-    width: 46vw;
+    width: 45vw;
   }
   .card img {
-    height: 45vh;
+    height: 30vh;
   }
   .footer h3 {
     text-align: center;
@@ -507,5 +503,28 @@ a {
   .img-cover img {
     max-height: 500px;
     height: 450px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  .nav ul li {
+    max-width: 300px;
+  }
+  .card {
+    width: 46vw;
+  }
+  .card img {
+    height: 45vh;
+  }
+  .menu-title h1,
+.menu-title i,
+.menu h2,
+.menu hr,
+.menu-card {
+    margin-left: 15%;
+    margin-right: 15%;
   }
 }/*# sourceMappingURL=media.css.map */
