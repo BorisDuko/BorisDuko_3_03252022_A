@@ -2,9 +2,7 @@
 @import "./variables";
 @import "./animMenu";
 
-// temporary for html structure
-
-// -------------------------------------------------------------
+// ----- Header -----
 
 // logo & home-arrow div
 .return-btn-logo {
@@ -35,7 +33,7 @@ main {
 .img-cover img {
   width: 100%;
   object-fit: cover; // if height changes - picture doesn't crumble
-  height: 220px; // TODO
+  height: 220px;
 }
 
 .menu-title {
@@ -81,9 +79,6 @@ main {
 }
 
 // ----- Menu-card -----
-
-.menu-card {
-}
 
 .menu-card__item {
   display: flex;

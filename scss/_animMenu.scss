@@ -28,6 +28,7 @@ $anim-delay: $anim-dur / 2;
 }
 
 // ----- menu titles appearance -----
+// 2-4 & 3-4 is for four item menu adjustments
 
 $title-dur: 500ms;
 
@@ -62,6 +63,7 @@ $title-dur: 500ms;
 }
 
 // ----- horizontal rule sliding out -----
+// 2-4 & 3-4 is for four item menu adjustments
 
 .hr {
   &--1 {
@@ -137,7 +139,8 @@ $title-dur: 500ms;
 //   }
 // }
 
-// check-in working
+// check-in / sliding in animation
+// 15% delay for smoother appearance
 @keyframes check-in {
   0% {
     width: 0;
@@ -154,7 +157,8 @@ $title-dur: 500ms;
     opacity: 1;
   }
 }
-// but check-out does not
+// check-out / return animation
+// 15% same principal for return animation
 // opacity is ignored
 @keyframes check-out {
   from {
